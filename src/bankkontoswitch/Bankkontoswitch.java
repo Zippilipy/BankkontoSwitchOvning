@@ -23,7 +23,8 @@ public class Bankkontoswitch {
         double belopp = 1000;
         do {
             if (Double.isInfinite(belopp)) {
-                System.exit(11);
+                System.out.println("Belopp överskredde max gräns, avslutar.");
+                System.exit(0);
             }
             System.out.println("Välkommen till min bank!");
             System.out.println("1. Insättning");
